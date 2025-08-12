@@ -1,17 +1,4 @@
 @import "tailwindcss";
-.marquee-track {
-  display: flex;
-  width: max-content;
-  animation: marquee 120s linear infinite;
-}
-@keyframes marquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 .swiper-pagination-bullet {
   background: #d1d1d1;

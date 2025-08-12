@@ -10,7 +10,7 @@ const Assortment = () => {
   const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [activeCategory, setActiveCategory] = useState([]);
-  const [accordionOpen, setAccordionOpen] = useState([]);
+  const [accordionOpen, setAccordionOpen] = useState(false);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -108,12 +108,15 @@ const Assortment = () => {
         </ul>
       </aside>
 
-      <div className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-6 ">
+      <div
+        className="w-full md:w-3/4 grid grid-cols-2 md:grid-cols-4 gap-6"
+        style={{ gridAutoRows: "20rem" }}
+      >
         {filteredProducts.length > 0 ? (
           filteredProducts.map((product) => (
             <div
               key={product._id}
-              className="bg-white shadow p-4 flex flex-col text-center h-80 space-y-3"
+              className="bg-white shadow p-4 flex flex-col text-center space-y-3 h-full"
             >
               {product.image && (
                 <img

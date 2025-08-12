@@ -86,7 +86,7 @@ function MainNavigation() {
       </div>
 
       {menu && (
-        <ul className="md:hidden bg-white px-4 pb-4 text-center">
+        <ul className="md:hidden bg-white px-4 pb-4 text-center space-y-10">
           <li>
             <NavLink
               onClick={closeMenu}

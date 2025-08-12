@@ -58,7 +58,7 @@ const BrandsCarousel = () => {
           w-full 
           object-cover 
           mx-auto 
-          max-h-48 
+          max-h-40 
           lg:w-1/2 
           lg:max-h-none 
           lg:h-auto 
@@ -66,16 +66,20 @@ const BrandsCarousel = () => {
                 />
               )}
 
-              <div className="flex-1 flex flex-col justify-center p-4">
+              <div className="flex-1 flex flex-col p-4 justify-center gap-5">
                 {!brand.logoUrl && (
-                  <h3 className="font-bold text-6xl">{brand.brandName}</h3>
+                  <div className="h-20 flex items-center justify-center">
+                    <h3 className="font-bold text-3xl lg:text-4xl">
+                      {brand.brandName}
+                    </h3>
+                  </div>
                 )}
 
                 {brand.logoUrl && (
                   <img
                     src={brand.logoUrl}
                     alt={brand.brandName}
-                    className="mx-auto my-2 max-w-[200px]"
+                    className="mx-auto my-2 h-20 w-96 xl:w-2xl object-contain"
                   />
                 )}
 
