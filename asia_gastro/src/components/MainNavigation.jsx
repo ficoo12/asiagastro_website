@@ -8,7 +8,9 @@ function MainNavigation() {
   return (
     <header className="bg-white shadow-md fixed w-full z-50">
       <div className="container mx-auto flex justify-between items-center p-4">
-        <img src={Logo} alt="Asia Gastro Logo" className="h-12"></img>
+        <NavLink to="/">
+          <img src={Logo} alt="Asia Gastro Logo" className="h-12"></img>
+        </NavLink>
         <nav>
           <ul className="space-x-6 hidden md:flex">
             <li>

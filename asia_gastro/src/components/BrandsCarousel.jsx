@@ -83,7 +83,9 @@ const BrandsCarousel = () => {
                   />
                 )}
 
-                {brand.description && <p>{brand.description}</p>}
+                {brand.description && (
+                  <p className="pb-10">{brand.description}</p>
+                )}
               </div>
             </div>
           </SwiperSlide>
