@@ -43,7 +43,7 @@ const Assortment = () => {
 
   return (
     <section className="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 min-h-screen pt-40">
-      <aside className="w-full md:w-1/4">
+      <aside className="w-full md:w-1/4 max-h-96 z-50 overflow-scroll">
         <h2 className="mb-5 hidden md:block font-semibold">Categories:</h2>
 
         <div className="md:hidden mb-4">
