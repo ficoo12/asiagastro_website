@@ -43,7 +43,7 @@ const Assortment = () => {
 
   return (
     <section className="container mx-auto px-4 py-12 flex flex-col md:flex-row gap-8 min-h-screen pt-40">
-      <aside className="w-full md:w-1/4 max-h-96 z-50 overflow-scroll">
+      <aside className="w-full md:w-1/4">
         <h2 className="mb-5 hidden md:block font-semibold">Categories:</h2>
 
         <div className="md:hidden mb-4">
@@ -72,7 +72,7 @@ const Assortment = () => {
             {activeCategory}
           </p>
           {accordionOpen && (
-            <ul className="mt-2 border border-gray-300 rounded overflow-hidden">
+            <ul className="mt-2 border border-gray-300 rounded max-h-96 overflow-scroll">
               {categories.map((cat) => (
                 <li key={cat._id}>
                   <button
@@ -90,7 +90,7 @@ const Assortment = () => {
           )}
         </div>
 
-        <ul className="hidden md:block space-y-2 font-semibold">
+        <ul className="hidden md:block space-y-2 font-semibold max-h-96 overflow-scroll">
           {categories.map((cat) => (
             <li key={cat._id}>
               <button
