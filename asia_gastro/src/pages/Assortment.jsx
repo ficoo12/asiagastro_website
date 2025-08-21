@@ -90,7 +90,7 @@ const Assortment = () => {
           )}
         </div>
 
-        <ul className="hidden md:block space-y-2 font-semibold max-h-96 overflow-scroll">
+        <ul className="hidden md:block space-y-2 font-semibold max-h-screen overflow-scroll">
           {categories.map((cat) => (
             <li key={cat._id}>
               <button
